@@ -1,4 +1,57 @@
 body {
     background: black;
     color: white;
+    font-family: 'Dancing Script', cursive;
 }
+
+.main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.text {
+    font-size: 45px;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    text-align: center;
+   
+}
+
+.images {
+    display: grid;
+    grid-template-columns: fit-content(55vh) fit-content(40%);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+
+.img {
+    width: 50rem;
+    max-width: 100%;
+    border-radius: 28px;
+}
+
+.img:last-child {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+button {
+    align-self: center;
+    background: white;
+    border-radius: 9px;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .images {
+        display: inline-block;
+    }
+  }
+
+  
