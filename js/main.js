@@ -1,7 +1,3 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    confetti.start()
-})
-
-setTimeout(function(){ 
-    confetti.pause();
- }, 15000);
+    confetti.start(15000,50, 200);
+});
